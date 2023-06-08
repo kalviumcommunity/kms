@@ -6,9 +6,11 @@
 (Streamline Student Management and Collaboration: An Efficient Solution for Students, Mentors, and Administrators)
 
 
+
 ## Objective
 
 The objective of the Kalvians Management System is to create a streamlined and efficient platform for student management and collaboration. It aims to simplify administrative tasks, enhance communication between students, mentors, and administrators, and optimize the learning experience. The system focuses on providing features such as enrollment management, scheduling, assignment tracking, discussions, notifications, and ticketing to ensure seamless coordination and effective information sharing. By leveraging the power of technology, the project aims to revolutionize traditional student management processes and create a user-friendly environment that fosters engagement, productivity, and growth. The Kalvians Management System strives to be the go-to solution for educational institutions seeking a comprehensive and integrated platform for student management and collaboration.
+
 
 
 ## Description 
@@ -28,6 +30,7 @@ The Kalvians Management System is a web-based application designed to revolution
 + Announcements and Notifications
 + Ticketing System
 + Account Settings
+
 
 
 ## Tech Stacks
