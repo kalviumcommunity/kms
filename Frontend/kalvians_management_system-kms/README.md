@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Kalvians Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Kalvians Management System is a web-based application designed to revolutionize student management processes. It offers a wide range of features and functionalities to enhance communication, streamline administrative tasks, and optimize the learning experience for students, mentors, and administrators. From enrollment and scheduling to assignment management and discussions, the Kalvians Management System provides a centralized platform for efficient collaboration and coordination.
 
-## Available Scripts
+## Key Features
 
-In the project directory, you can run:
+- **User Registration and Login:** Users can create accounts and securely log in to access the system.
+- **Dashboard/Homepage for Personalized Experience:** Each user is presented with a personalized dashboard providing relevant information and quick access to features.
+- **Schedule Management:** A comprehensive scheduling system to manage classes, events, and important dates.
+- **Assignments Management:** Students can submit assignments, and mentors can review and grade them. Quizzes can be created and managed effectively.
+- **Discussions and Messaging:** Students, mentors, and administrators can communicate through discussion forums and direct messaging.
+- **Announcements and Notifications:** Important announcements and notifications are delivered to users to keep them informed.
+- **Ticketing System:** A ticketing system to handle queries, support requests, and issue tracking.
+- **Profile & Account Settings:** Users can manage their profile settings, update personal information, and customize their preferences.
 
-### `npm start`
+## Tech Stacks
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Backend:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js
+- Express.js
+- SQL Database
 
-### `npm test`
+### Frontend:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- Redux
+- JavaScript
+- HTML
+- CSS
 
-### `npm run build`
+## Installation and Local Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To install and run the Kalvians Management System locally, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository: `git clone https://github.com/kalviumcommunity/kms.git`
+2. Navigate to the project directory: `cd Frontend/kalvians_management_system-kms`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm start`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
 
-### `npm run eject`
+This project is licensed under the MIT License Name. Please refer to the LICENSE file for more information.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contact
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+For any inquiries or feedback, please contact us at nikhil@kalvium.community. We value your input and will respond as soon as possible.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for using the Kalvians Management System!
