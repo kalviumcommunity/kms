@@ -1,11 +1,12 @@
 import './App.css';
 import Navbar from './Components/Navbar';
+import AllRoutes from './Routes/AllRoutes';
 
 function App() {
   return (
     <div className="App">
-        <Navbar></Navbar>
-        <h1 className='header'>KMS</h1>
+      <Navbar></Navbar>
+      <AllRoutes></AllRoutes>
     </div>
   );
 }
