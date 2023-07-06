@@ -3,7 +3,7 @@ import AllRoutes from './Routes/AllRoutes';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{border:"2px solid blue"}}>
       <Navbar></Navbar>
       <AllRoutes></AllRoutes>
     </div>
