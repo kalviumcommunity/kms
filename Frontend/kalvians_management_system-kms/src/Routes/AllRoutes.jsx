@@ -14,7 +14,7 @@ import Tickets from '../Pages/Tickets';
 const AllRoutes = () => {
   return (
     <Routes>
-        <Route path="/" element={<Home></Home> }></Route>
+        <Route path="/dashboard" element={<Home></Home> }></Route>
         <Route path="/register" element={<Registration></Registration>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/assignments" element={<Assignements></Assignements>}></Route>
