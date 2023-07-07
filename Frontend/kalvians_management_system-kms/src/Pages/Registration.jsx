@@ -1,4 +1,4 @@
-import { Box, Button, TextField, Typography } from '@mui/material';
+import { Box, Button, TextField, Typography, Snackbar, Alert } from '@mui/material';
 import React from 'react';
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
@@ -9,43 +9,73 @@ const Registration = () => {
   const [name,setName]=useState("");
   const [email,setEmail]=useState("");
   const [password,setPassword]=useState("");
+  const [open, setOpen] = useState(false);
+  const [msg, setMsg] = useState("");
+  const [severity, setSeverity] = useState("success");
+
 
   const Navigate=useNavigate();
 
-  const handleRegistration=async()=>{
+  let base_url=`${process.env.REACT_APP_BASE_URL}`
+
+  const handleRegistration = async()=>{
 
    if(!name || !email || !password){
-      alert("Please fill all your details");
+
+      setMsg("Please fill all your details");
+
+      setOpen(true);
+
+      setSeverity("warning");
+
       return;
+
    }
 
    if(!email.includes("@")){
-         alert("Please enter the correct E-mail address");
-         setEmail("")
+
+         setMsg("Please enter the correct E-mail address");
+
+         setEmail("");
+
+         setOpen(true);
+
+         setSeverity("warning");
+
          return;
+
    }
 
    if(password.length>15 || password.length<8){
-      alert("Please enter the password between 8-15 characters");
-      setPassword("");
-      return;
-}
 
-   let data={
-      name,
-      email,
-      password
+      setMsg("Please enter the password between 8-15 characters");
+
+      setPassword("");
+
+      setOpen(true);
+
+      setSeverity("warning");
+
+      return;
+
    }
+
+      let data={
+         name,
+         email,
+         password
+      }
 
       try {
 
-         let res = await fetch('http://localhost:3000/registration_data',{
+         let res = await fetch(`${base_url}/registration_data`,{
          
          method:'POST',
 
          body: JSON.stringify(data), 
          
-         headers:{        
+         headers:{
+
             'Content-type': 'application/json' 
          }
 
@@ -54,32 +84,43 @@ const Registration = () => {
          let result=await res.json();
 
          setName("");
+
          setEmail("");
+
          setPassword("");
 
-         alert("Congratulations, Registeration Successfull...!!!");
+         setMsg("Congratulations, Registeration Successfull...!!!");
+
+         setSeverity("success");
+
+         setOpen(true);
+
+         setTimeout(()=>{
+
+            Navigate("/login");
+
+         },2000)
          
-         Navigate("/login")
+         
 
       } catch (error) {
          
          console.log(error);
 
-         alert("Something went wrong");
+         setMsg("Something went wrong");
+
+         setSeverity("error");
+
+         setOpen(true);
+
       }
-      
-
-      
-      
-    
-      
-
 
   }
 
   
 
   return (
+   <React.Fragment>
     <Box sx={{background:"#FFF",minHeight:"100vh"}}>
     <Box component="form" borderRadius="17px" background="#FFFFFF" boxShadow="4px 4px 4px 4px rgb(0,0,0,0.25)" sx={{display:"flex",flexDirection:"column",width:"33%",margin:"auto",marginTop:"10vh"}} >
         <Typography variant="h5" color="#8CB082" m="auto" mt={5} mb={5} fontWeight="bold">REGISTRATION</Typography>
@@ -116,6 +157,13 @@ const Registration = () => {
         <Button onClick={handleRegistration} variant="contained" sx={{width:"25%",m:"auto",mb:"5%",fontSize:"20px",fontWeight:"bold",background:"#8CB082",color:"#FFF"}}>SIGN UP</Button>
     </Box>
     </Box>
+
+    <Snackbar open={open} sx={{mt:["15%","12%","5%"],fontWeight:"bold"}} anchorOrigin={{ vertical:"top", horizontal:"center" }} autoHideDuration={2000} onClose={() => setOpen(false)}>
+   <Alert sx={{fontWeight:"bold"}} onClose={() => setOpen(false)} severity={severity}>
+      {msg}
+   </Alert>
+   </Snackbar>
+    </React.Fragment>
   )
 }
 
