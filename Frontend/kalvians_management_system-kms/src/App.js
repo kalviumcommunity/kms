@@ -18,8 +18,8 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
     <Box className="App" >
-      <Navbar></Navbar>
-      <AllRoutes></AllRoutes>
+      <Navbar/>
+      <AllRoutes/>
     </Box>
     </ThemeProvider>
   );
