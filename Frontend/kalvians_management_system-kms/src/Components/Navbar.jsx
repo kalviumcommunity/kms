@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import "./Navbar.css";
 import { AppBar, Box, Toolbar, Typography, Stack, IconButton } from "@mui/material"
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
