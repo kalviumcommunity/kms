@@ -121,8 +121,8 @@ const Registration = () => {
 
   return (
    <React.Fragment>
-    <Box sx={{background:"#FFF",minHeight:"100vh"}}>
-    <Box component="form" borderRadius="17px" background="#FFFFFF" boxShadow="4px 4px 4px 4px rgb(0,0,0,0.25)" sx={{display:"flex",flexDirection:"column",width:"33%",margin:"auto",marginTop:"10vh"}} >
+    <Box sx={{background:"#F3F7F2",minHeight:"100vh",paddingTop:"10vh"}}>
+    <Box component="form" borderRadius="17px" backgroundColor="#FFFFFF" boxShadow="4px 4px 4px 4px rgb(0,0,0,0.25)" sx={{display:"flex",flexDirection:"column",width:"33%",margin:"auto"}} >
         <Typography variant="h5" color="#8CB082" m="auto" mt={5} mb={5} fontWeight="bold">REGISTRATION</Typography>
         <Typography variant="h6" pl="5%">Name</Typography>
         <TextField

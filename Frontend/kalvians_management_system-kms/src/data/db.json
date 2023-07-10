@@ -1,0 +1,198 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  
+    "students_data": [
+      {
+        "name": "Harish",
+        "email": "rishi@gmail.com",
+        "batch": "Squad45",
+        "rollNo": 1,
+        "mentor": "Jithin",
+        "schedule": [
+          {
+            "title": "BT-Standup",
+            "type": "Lecture",
+            "scheduledBy": "Jithin",
+            "scheduledDate": "12 July, 2023",
+            "scheduledTime": "9:00 am"
+          },
+          {
+            "title": "Problem Solving (DSA)",
+            "type": "Assignment",
+            "scheduledBy": "Neel",
+            "scheduledDate": "12 July, 2023",
+            "scheduledTime": "10:00 am"
+          },
+          {
+            "title": "Fun Activity",
+            "type": "Extra-curricular Activities",
+            "scheduledBy": "Arthi",
+            "scheduledDate": "12 July, 2023",
+            "scheduledTime": "12:00 pm"
+          },
+          {
+            "title": "React Task",
+            "type": "Task",
+            "scheduledBy": "Nikhil",
+            "scheduledDate": "12 July, 2023",
+            "scheduledTime": "3:00 pm"
+          }
+        ],
+        "assignments": [
+          {
+            "title": "Problem-Solving (DSA)",
+            "scheduledBy": "Neel",
+            "scheduledDate": "12 July, 2023",
+            "scheduledTime": "10:00 am"
+          },
+          {
+            "title": "React Task",
+            "scheduledBy": "Nikhil",
+            "scheduledDate": "12th July, 2023",
+            "scheduledTime": "10:00 am"
+          },
+          {
+            "title": "Coding Assignment",
+            "scheduledBy": "Neel",
+            "scheduledDate": "11 July, 2023",
+            "scheduledTime": "3:00 pm"
+          },
+          {
+            "title": "Python & C++ PSUP Quizr Assignment",
+            "scheduledBy": "Arthi",
+            "scheduledDate": "11 July, 2023",
+            "scheduledTime": "10:00 am"
+          }
+        ],
+        "discussions": [
+          {
+            "title": "Regarding the BT Stand-up",
+            "category": "Lecture",
+            "startedBy": "Harish",
+            "msg": "I am unable to attend the stand-up today. Can I get my today's plan?",
+            "date": "12 July, 2023",
+            "time": "6 pm"
+          },
+          {
+            "title": "Regarding the Problem-Solving (DSA)",
+            "category": "Assignment",
+            "startedBy": "Ahamed",
+            "msg": "I am unable to solve the DSA problem. Please help me?",
+            "date": "12 July, 2023",
+            "time": "3 pm"
+          },
+          {
+            "title": "Regarding the Fun Activity",
+            "category": "Extra-Curricular Activities",
+            "startedBy": "Jawahar",
+            "msg": "I am unable to join today's. Shall I know the topic of today's fun activity?",
+            "date": "11 July 2023",
+            "time": "6 pm"
+          },
+          {
+            "title": "Regarding the React Task",
+            "category": "Task",
+            "startedBy": "Rishi",
+            "msg": "I am unable to attend the React task today. Can you please reassign it to me again?",
+            "date": "11 July 2023",
+            "time": "3 pm"
+          }
+        ],
+        "notifications": [
+          {
+            "title": "Weekly Sprint Plan",
+            "sendBy": "Jithin",
+            "date": "12 July, 2023",
+            "time": "9 am"
+          },
+          {
+            "title": "Problem-solving assessment Feedback",
+            "sendBy": "Neel",
+            "date": "12 July, 2023",
+            "time": "9 am"
+          },
+          {
+            "title": "Feedback on Capstone Project Presentation",
+            "sendBy": "Neel",
+            "date": "12 July, 2023",
+            "time": "9 am"
+          },
+          {
+            "title": "Feedback on React Task",
+            "sendBy": "Nikhil",
+            "date": "12 July, 2023",
+            "time": "9 am"
+          }
+        ],
+        "tickets": [
+          {
+            "title": "Regarding the leave",
+            "category": "Leave",
+            "date": "12 July, 2023",
+            "time": "9 am"
+          },
+          {
+            "title": "Regarding the late submission of assignment",
+            "category": "Assignment",
+            "date": "11 July, 2023",
+            "time": "9 am"
+          },
+          {
+            "title": "Regarding the evaluations",
+            "category": "Evaluation",
+            "date": "10 July, 2023",
+            "time": "9 am"
+          },
+          {
+            "title": "Regarding the attendance",
+            "category": "Attendance",
+            "date": "7 July, 2023",
+            "time": "9 am"
+          }
+        ],
+        "announcements": [
+          {
+            "title": "Weekly Sprint Plan",
+            "sendBy": "Jithin",
+            "date": "12 July, 2023",
+            "time": "9 am"
+          },
+          {
+            "title": "Problem-solving assessment Feedback",
+            "sendBy": "Neel",
+            "date": "12 July, 2023",
+            "time": "9 am"
+          },
+          {
+            "title": "Feedback on Capstone Project Presentation",
+            "sendBy": "Neel",
+            "date": "12 July, 2023",
+            "time": "9 am"
+          },
+          {
+            "title": "Feedback on React Task",
+            "sendBy": "Nikhil",
+            "date": "12 July, 2023",
+            "time": "9 am"
+          }
+        ]
+      }
+    ],
+  
+  "registration_data": [
+    
+  ]
+}
