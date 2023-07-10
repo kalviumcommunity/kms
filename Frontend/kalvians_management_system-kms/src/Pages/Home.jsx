@@ -88,7 +88,6 @@ const Home = () => {
           </Box>
           )}
         </Box>
-        
       </Box>
       
     </React.Fragment>
