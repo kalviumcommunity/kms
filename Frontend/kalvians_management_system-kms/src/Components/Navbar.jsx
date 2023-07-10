@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import "./Navbar.css";
 import { AppBar, Box, Toolbar, Typography, Stack, IconButton } from "@mui/material"
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
@@ -20,14 +18,14 @@ const Navbar = () => {
 
   return (
     <>
-    <AppBar position="fixed" sx={{height:"88px",width:"100%",display:"flex",justifyContent:"center",background:"#8CB082"}}>
+    <AppBar position="fixed" sx={{ boxShadow: 'none',height:"88px",width:"100%",display:"flex",justifyContent:"center",background:"#8CB082"}}>
       <Toolbar>
           <Stack direction="row" justifyContent="space-between" alignItems="center" sx={{width:"100%"}}>
             <Box sx={{width:"250px",height:"44px"}} component="img" src="https://kalvium.com/wp-content/uploads/2023/04/Kalvium-Logo-SVG.svg">
 
             </Box>
-          <Box sx={{display:"flex",alignItems:"center",fontWeight:"500"}}>
-             <Box sx={{height:"44px",backgroundColor:"white",color:"#000000",borderRadius:"7px",width:"986px",display:"flex",alignItems:"center",justifyContent:"space-around"}}>
+          <Box sx={{display:"flex",alignItems:"center",fontWeight:"500",width:"75%"}}>
+             <Box sx={{height:"44px",backgroundColor:"#FFFFFF",color:"#000000",borderRadius:"7px",width:"100%",display:"flex",alignItems:"center",justifyContent:"space-around"}}>
                 <Typography variant="h7" className={classes.hoverable} >DASHBOARD</Typography>
                 <Typography variant="h7" className={classes.hoverable}>ASSIGNMENTS</Typography>
                 <Typography variant="h7" className={classes.hoverable}>DISCUSSION FORUM</Typography>
@@ -42,7 +40,7 @@ const Navbar = () => {
           </Stack>
         </Toolbar>
     </AppBar>
-    <Box sx={{height:"88px"}}>
+    <Box sx={{height:"80px"}}>
 
     </Box>
     </>
